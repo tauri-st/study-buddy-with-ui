@@ -49,3 +49,4 @@ Then hard refresh the page. When making changes to your Python, HTML, or JavaScr
 When finished, quit the run by clicking control + C and close the virtual environment by running:
 
 `deactivate`
+# study-buddy-with-ui
