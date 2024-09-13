@@ -19,7 +19,8 @@ client = OpenAI()
 app = Flask(__name__)
 
 # Initialize the Assistant and Thread globally so all functions have access to the assistant_id and thread_id
-
+assistant_id = ""
+thread_id = ""
 
 # The array that will hold the chat history as the user and the assistant interact
 
