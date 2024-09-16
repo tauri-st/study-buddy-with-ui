@@ -29,7 +29,10 @@ chat_history = [
 ]
 
 # Start by getting the assistant_id and thread_id and returning them
-
+# these are passed to the JS
+@app.route("/get_ids", methods=["GET"])
+def get_ids():
+    return jsonify(assistant_id=assistant_id, thread_id=thread_id)
 
 # If there is a message thread, send it to the the JavaScript using msg.role to render it to the UI. # # If there isn't a thread, return an error
 
