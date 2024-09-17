@@ -73,7 +73,9 @@ def create_thread():
     return thread
 
 # Function to add to the log in the assistant.log file
-
+def log_run(run_status):
+    if run_status in ["cancelled", "failed", "expired"]:
+        log.error(str(datetime.datetime.now()) + " Run " + run_status + "\n")
 
 # Render the HTML template and pass in the chat_history array
 @app.route("/", methods=["GET"])

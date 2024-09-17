@@ -44,3 +44,18 @@ INFO:werkzeug:127.0.0.1 - - [17/Sep/2024 16:54:08] "GET /?__debugger__=yes&cmd=r
 INFO:werkzeug:127.0.0.1 - - [17/Sep/2024 16:54:08] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
 INFO:werkzeug: * Detected change in 'C:\\Users\\User\\Desktop\\skillcrush\\break-into-tech\\generative-ai-web-apps\\study-buddy-with-ui\\app.py', reloading
 INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 202-536-516
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/assistants/asst_9SxN5GRAoLRY67C2XnFXRWhI "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [17/Sep/2024 16:55:38] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Sep/2024 16:55:38] "GET /static/script.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Sep/2024 16:55:38] "GET /static/send-icon.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Sep/2024 16:55:38] "GET /static/logo-v4.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Sep/2024 16:55:38] "GET /static/main.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Sep/2024 16:55:38] "GET /get_ids HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Sep/2024 16:55:38] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_jk7QWNW3vYXtbDP8OainkXMP/messages?order=asc "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [17/Sep/2024 16:55:38] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\User\\Desktop\\skillcrush\\break-into-tech\\generative-ai-web-apps\\study-buddy-with-ui\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
