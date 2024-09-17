@@ -63,7 +63,7 @@ def get_messages():
 # Function to add to the log in the assistant.log file
 
 
-# Render the HTML template - we're going to see a UI!!!
+# Render the HTML template and pass in the chat_history array
 @app.route("/", methods=["GET"])
 def index():
     return render_template("index.html", chat_history=chat_history)
