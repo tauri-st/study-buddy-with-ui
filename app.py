@@ -62,7 +62,15 @@ def create_assistant():
     return my_assistant
 
 # Create a thread if there isn't one
-
+def create_thread():
+    global thread_id
+    if thread_id == "":
+        thread = client.beta.threads.create()
+        thread_id = thread.id
+    else:
+        thread = client.beta.threads.retrieve(thread_id)
+        thread_id = thread.id
+    return thread
 
 # Function to add to the log in the assistant.log file
 
