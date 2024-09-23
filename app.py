@@ -89,6 +89,16 @@ def index():
 # message user adds passed in
 def chat():
     user_input = request.json["message"]
+    moderation_result = client.moderations.create(
+        input = user_input
+    )
+    while moderation_result.results[0].flagged == True:
+        moderation_result = client.moderations.create(
+        input = user_input
+        )
+ 
+        chat_history.append({"role": "assistant", "content": user_input})
+        return jsonify(success=True, message="Assistant: Sorry, your message violated our community guidelines. Please try another prompt.")
     
 # Reset the chat
 @app.route("/reset", methods=["POST"])
