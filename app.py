@@ -121,6 +121,7 @@ def chat():
     message = thread_messages.data[0].content[0].text.value
     if run.status in ["cancelled", "failed", "expired"]:
         message = "An error has occurred, please try again."
+    
     chat_history.append({"role": "assistant", "content": message})
     log_run(run.status)
     return jsonify(success=True, message=message)   
