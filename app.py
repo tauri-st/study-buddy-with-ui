@@ -100,6 +100,12 @@ def chat():
         chat_history.append({"role": "assistant", "content": user_input})
         return jsonify(success=True, message="Assistant: Sorry, your message violated our community guidelines. Please try another prompt.")
     
+    # Send the message to the assistant
+    # Create dictionary of message params
+    message_params = {"thread_id": thread_id, "role": "user", "content": user_input}
+    # Pass message parameters to the method that creates the thread
+    thread_message = client.beta.threads.messages.create(**message_params)
+    
 # Reset the chat
 @app.route("/reset", methods=["POST"])
 def reset_chat():
