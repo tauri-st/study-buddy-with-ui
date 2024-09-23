@@ -82,8 +82,10 @@ def log_run(run_status):
 def index():
     return render_template("index.html", chat_history=chat_history)
 
-# This is the POST route for the chat. Adds the chat to the chat_history array and sends it to the assistant playground on openai
- 
+# POST route for the chat. 
+# Adds the chat to the chat_history array 
+# Sends it to the assistant playground on openai
+@app.route("/chat", methods=["POST"])
     
 # Reset the chat
 @app.route("/reset", methods=["POST"])

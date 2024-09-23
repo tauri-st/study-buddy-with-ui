@@ -59,3 +59,32 @@ INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_jk7QWNW3vY
 INFO:werkzeug:127.0.0.1 - - [17/Sep/2024 16:55:38] "GET /get_messages HTTP/1.1" 200 -
 INFO:werkzeug: * Detected change in 'C:\\Users\\User\\Desktop\\skillcrush\\break-into-tech\\generative-ai-web-apps\\study-buddy-with-ui\\app.py', reloading
 INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 202-536-516
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 202-536-516
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/assistants/asst_9SxN5GRAoLRY67C2XnFXRWhI "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [23/Sep/2024 10:48:54] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Sep/2024 10:48:54] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [23/Sep/2024 10:48:54] "[36mGET /static/logo-v4.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [23/Sep/2024 10:48:54] "[36mGET /static/send-icon.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [23/Sep/2024 10:48:54] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [23/Sep/2024 10:48:54] "GET /get_ids HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Sep/2024 10:48:54] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_qUoLV3ic0AKGQtJyznFanpQ4/messages?order=asc "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [23/Sep/2024 10:48:55] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\User\\Desktop\\skillcrush\\break-into-tech\\generative-ai-web-apps\\study-buddy-with-ui\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 202-536-516
+INFO:werkzeug: * Detected change in 'C:\\Users\\User\\Desktop\\skillcrush\\break-into-tech\\generative-ai-web-apps\\study-buddy-with-ui\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 202-536-516
+INFO:werkzeug: * Detected change in 'C:\\Users\\User\\Desktop\\skillcrush\\break-into-tech\\generative-ai-web-apps\\study-buddy-with-ui\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
