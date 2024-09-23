@@ -86,6 +86,9 @@ def index():
 # Adds the chat to the chat_history array 
 # Sends it to the assistant playground on openai
 @app.route("/chat", methods=["POST"])
+# message user adds passed in
+def chat():
+    user_input = request.json["message"]
     
 # Reset the chat
 @app.route("/reset", methods=["POST"])
