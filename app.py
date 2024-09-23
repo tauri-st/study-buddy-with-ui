@@ -114,6 +114,12 @@ def chat():
     while run.status != "completed":
         time.sleep(0.5)
         run = client.beta.threads.runs.retrieve(thread_id = thread_id, run_id = run.id)
+    # Add message to chat history
+    thread_messages = client.beta.threads.messages.list(thread_id)
+    message = thread_messages.data[0].content[0].text.value
+    if run.status in ["cancelled", "failed", "expired"]:
+        message = "An error has occurred, please try again."
+    chat_history.append({"role": "assistant", "content": message})
 
 # Reset the chat
 @app.route("/reset", methods=["POST"])

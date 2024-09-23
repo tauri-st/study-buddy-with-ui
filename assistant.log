@@ -108,3 +108,7 @@ WARNING:werkzeug: * Debugger is active!
 INFO:werkzeug: * Debugger PIN: 202-536-516
 INFO:werkzeug: * Detected change in 'C:\\Users\\User\\Desktop\\skillcrush\\break-into-tech\\generative-ai-web-apps\\study-buddy-with-ui\\app.py', reloading
 INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 202-536-516
+INFO:werkzeug: * Detected change in 'C:\\Users\\User\\Desktop\\skillcrush\\break-into-tech\\generative-ai-web-apps\\study-buddy-with-ui\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
