@@ -104,8 +104,17 @@ def chat():
     # Create dictionary of message params
     message_params = {"thread_id": thread_id, "role": "user", "content": user_input}
     # Pass message parameters to the method that creates the thread
+    # The ** is a Python shortcut that allows you to pass multiple arguements within a dictionary, list, or tuple to a function
     thread_message = client.beta.threads.messages.create(**message_params)
-    
+    run = client.beta.threads.runs.create(
+        thread_id = thread_id,
+        assistant_id = assistant_id
+    )
+    # Display "..." to the user while thinking
+    while run.status != "completed":
+        time.sleep(0.5)
+        run = client.beta.threads.runs.retrieve(thread_id = thread_id, run_id = run.id)
+
 # Reset the chat
 @app.route("/reset", methods=["POST"])
 def reset_chat():
