@@ -100,6 +100,8 @@ def chat():
         chat_history.append({"role": "assistant", "content": user_input})
         return jsonify(success=True, message="Assistant: Sorry, your message violated our community guidelines. Please try another prompt.")
     
+    chat_history.append({"role": "user", "content": user_input})
+    
     # Send the message to the assistant
     # Create dictionary of message params
     message_params = {"thread_id": thread_id, "role": "user", "content": user_input}
@@ -120,6 +122,8 @@ def chat():
     if run.status in ["cancelled", "failed", "expired"]:
         message = "An error has occurred, please try again."
     chat_history.append({"role": "assistant", "content": message})
+    log_run(run.status)
+    return jsonify(success=True, message=message)   
 
 # Reset the chat
 @app.route("/reset", methods=["POST"])
